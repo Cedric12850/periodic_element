@@ -14,21 +14,29 @@ fetch('data.json')
         card.setAttribute ('id', typeFilter)
         elementTable.appendChild(card);
        
+        //creation de la div numéro atomique
         let atomicNumber = document.createElement ('p');
         atomicNumber.setAttribute('id', 'atomicNumber');
         card.appendChild(atomicNumber);
         atomicNumber.innerHTML = data.atomicNumber
 
+        //creation de la div symbol
         let elementSymbole = document.createElement ('h2');
         elementSymbole.setAttribute ('id', 'symbol');
         card.appendChild(elementSymbole);
         elementSymbole.innerHTML = data.symbol;
 
+
+        //creation de la div nom
         let elementName = document.createElement('p');
         elementName.setAttribute ('id', 'nom')
         card.appendChild(elementName);
         elementName.innerHTML = data.name;
 
 
+        
+
          })
 })
+
+
