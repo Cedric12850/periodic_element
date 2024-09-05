@@ -70,7 +70,7 @@ button {
     flex-direction: column;
     justify-content: space-between; */
     float: left;
-    /*display: none;  Hide all elements by default */
+    display: none;  /*Hide all elements by default */
     color: white;
 }
 

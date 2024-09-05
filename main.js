@@ -34,7 +34,18 @@ fetch('data.json')
         elementName.innerHTML = data.name;
 
 
-        
+        filterIsotope("all")
+        function filterIsotope(c) {
+            let x, i;
+            x = document.getElementsByClassName('elementCard');
+            if (c === "all")
+                c = "";
+             // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+             for (i=0; i<x.length; i++) {
+                x[i].classList.remove( "show");
+                if (x[i].className.indexOf(c) > -1) x[i].classList.add("show");
+             }
+        }
 
          })
 })
