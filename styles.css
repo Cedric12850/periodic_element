@@ -1,0 +1,109 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:after, *:before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  *::first-letter {
+    text-transform: capitalize;
+  }
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 4%;
+}
+
+.navMenu {
+    margin: 2%;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+button {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 1%;
+    background-color: rgb(204, 204, 204);
+    box-shadow: 1px 1px 3px 1px rgb(255, 255, 255);
+}
+
+.elementTable {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.elementCard {
+    box-sizing: inherit;
+    box-shadow: 1px 3px 5px 1px rgb(255, 255, 255);
+    width: 25%;
+    height: 110px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+#atomicNumber {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#symbol {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#nom{
+    font-size: 1rem;
+}
+
+#nonmetal {
+    background-color: rgb(192, 192, 192);
+}
+#noble-gas {
+    background-color: rgb(87, 87, 235);
+}
+#alkali-metal {
+    background-color: rgb(252, 114, 64);
+}
+#alkaline-earth-metal {
+    background-color: rgb(248, 201, 45);
+}
+#metalloid {
+    background-color: rgb(48, 151, 83);
+}
+#halogen {
+    background-color: rgb(110, 241, 250);
+}
+#transition-metal {
+    background-color: rgb(109, 57, 158);
+}
+#metal {
+    background-color: rgb(2, 95, 2);
+}
+#lanthanoid {
+    background-color: rgb(173, 46, 46);
+}
+#actinoid {
+    background-color: rgb(224, 123, 255);
+}
+#post-transition-metal {
+    background-color: rgb(127, 255, 170);
+}
