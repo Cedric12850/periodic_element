@@ -1,3 +1,9 @@
+:root {
+    --color-NonMetal : rgb(192, 192, 192);
+    --color-NobleGas : rgb(87, 87, 235);
+}
+
+
 html {
     box-sizing: border-box;
   }
@@ -97,10 +103,10 @@ button {
 }
 
 #nonmetal {
-    background-color: rgb(192, 192, 192);
+    background-color: var(--color-NonMetal);
 }
 #noble-gas {
-    background-color: rgb(87, 87, 235);
+    background-color: var(--color-NobleGas)
 }
 #alkali-metal {
     background-color: rgb(252, 114, 64);

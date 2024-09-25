@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tableau périodique des éléments</title>
-
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,28 +13,30 @@
             <h1>Tableau périodique des éléments</h1>
         </div>
         <div class="navMenu">
-            <div class="menu">
-                <button data-filter="all">Tous</button>
-                <button data-filter="nonmetal">Non-metaux</button>
-                <button data-filter="noble-gas">Gazs nobles</button>
-                <button data-filter="alkali-metal">Métaux alcalins</button>
-                <button data-filter="alkali-earth-metal">Métaux alcalino-terreux</button>
-                <button data-filter="transition-metal">Métaux de transitions</button>
-                <button data-filter="metal">Métaux pauvres</button>
-                <button data-filter="metalloid">Metalloïdes</button>
-                <button data-filter="halogen">Hallogènes</button>
-                <button data-filter="lanthanoid">Lanthanide</button>
-                <button data-filter="actinoid">Actinide</button>
+            <div class="button-group menu" id="filters">
+                <button class="button is-checked" data-filter="*">Tous</button>
+                <button class="button" data-filter="nonmetal">Non-metaux</button>
+                <button class="button" data-filter="noble-gas">Gazs nobles</button>
+                <button class="button" data-filter="alkali-metal">Métaux alcalins</button>
+                <button class="button" data-filter="alkali-earth-metal">Métaux alcalino-terreux</button>
+                <button class="button" data-filter="transition-metal">Métaux de transitions</button>
+                <button class="button" data-filter="metal">Métaux pauvres</button>
+                <button class="button" data-filter="metalloid">Metalloïdes</button>
+                <button class="button" data-filter="halogen">Hallogènes</button>
+                <button class="button" data-filter="lanthanoid">Lanthanide</button>
+                <button class="button" data-filter="actinoid">Actinide</button>
             </div>
         </div>
     </header>
 
     <section class="row">
-    <div class="elementTable">
+    <div class="grid elementTable">
+
 
     </div>
     </section>
 
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

@@ -10,8 +10,11 @@ fetch('data.json')
         let elementTable =document.querySelector('.elementTable');
         let card = document.createElement ('div');
         card.setAttribute ('class', 'elementCard');
+        
         let typeFilter = data.groupBlock.replaceAll(" ", "-");
-        card.setAttribute ('id', typeFilter)
+        card.setAttribute ('id', typeFilter);
+        card.setAttribute('data-category', typeFilter);
+        card.classList.add(typeFilter);
         elementTable.appendChild(card);
        
         //creation de la div numéro atomique
